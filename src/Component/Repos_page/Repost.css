@@ -18,70 +18,75 @@
   border-bottom-left-radius: 10px;
 }
 .search button {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: rgb(200, 200, 240);
   appearance: none;
   border: none;
   outline: none;
   cursor: pointer;
-  transition: .4s;
+  transition: 0.4s;
 }
-.search button:hover{
-  padding:0 5px;
+.search button:hover {
+  padding: 0 5px;
   color: white;
   background-color: black;
   transition: 0.4s;
 }
 .allpost {
-   
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
+}
+.repoLink {
+  margin-top: 50px;
+  background-color: #333;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 10px;
+  color: wheat;
+  width: 120px;
+  height: 20px;
+  overflow: hidden;
+}
+.repoLink:hover {
+  border: 1px solid black;
+  background-color: aliceblue;
+  color: black;
+  transition: .4s;
+}
+.reposContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1px;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 50vw;
+  place-items: center;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  background-color: #333;
 
-  }
-  .repoLink{
-    margin-top: 50px;
-    background-color: #333;
-    font-size: 1.1em;
-    text-decoration: none;
-    padding: 10px;
-    color: wheat;
-    width: 100px;
-    height: 20px;
-    overflow:hidden;
-    
-  }
-  .reposContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 1px;
-    margin: 0 auto;
-    width: 100vw;
-    place-items: center;
-  }
-  ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 0 auto;
-    position: fixed;
-    bottom: 0;
-    color: #fff;
-    text-align: center;
-    background-color: #333;
-    
-    width: 100%;
-  }
-  .reposContainer ul li button{
-    padding: 10px;
-    margin: 10px 0;
-  }
- 
-   
-    
-    
-    
-  
+  width: 100%;
+}
+.reposContainer ul li button {
+  padding: 10px;
+  margin: 10px 0;
+  transition: .4s;
+}
+.reposContainer ul li button:hover {
+ border: none;
+  background-color: rgb(86, 86, 248);
+  color: #fff;
+  transition: .4s;
+}

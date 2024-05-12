@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Repost from "./Component/Repos_page/Repost";
 import Repo from "./Component/Singile_Repo/Repo";
-import { useState, useRef, useEffect} from "react";
+import { useState, useRef, useEffect } from "react";
 import logo from "./logo.png";
 
 function App() {
@@ -62,12 +62,16 @@ function App() {
 
   return (
     <Router>
-      <div style={{ textAlign: 'center', height:'100%' }}>
-      <img src={ logo } alt="Logo" style={{ margin: '0 auto', display: 'block' }} />
+      <div style={{ textAlign: "center", height: "100%" }}>
+        <img
+          src={logo}
+          alt="Logo"
+          style={{ margin: "0 auto", display: "block" }}
+        />
       </div>
       <Routes>
         <Route
-          path="/Repos"
+          path="/"
           element={
             <Repost
               fetchRepoByName={fetchRepoByName}
@@ -75,14 +79,14 @@ function App() {
               repos={repos}
               fetchRepos={fetchRepos}
               repoInputRef={repoInputRef}
-              currentRepos={currentRepos} // Pass currentRepos as a prop
+              currentRepos={currentRepos}
               setCurrentPage={setCurrentPage}
               reposPerPage={reposPerPage}
-              paginate={paginate} // Pass the paginate function
+              paginate={paginate}
             />
           }
         />
-        <Route path="/:id" element={<Repo repoUrl={repoUrl}/>} />
+        <Route path="/:id" element={<Repo repoUrl={repoUrl} />} />
       </Routes>
     </Router>
   );
