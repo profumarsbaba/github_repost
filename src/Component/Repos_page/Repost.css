@@ -47,6 +47,8 @@
   width: 120px;
   height: 20px;
   overflow: hidden;
+  text-align: center;
+
 }
 .repoLink:hover {
   border: 1px solid black;
@@ -89,12 +91,20 @@ ul {
   color: #fff;
   transition: .4s;
 }
+.repoLink:hover {
+   background-color: #fff;
+   border: 1px solid black;
+}
 @media (max-width: 500px) {
   .reposContainer {
     
-    grid-template-columns: 1fr 1fr;
-    width: 100vw; 
-    place-items: center;
+    
+  .repoLink {
+    
+    margin-left: -30px;
+    gap: 20px;
   }
+}
+
 }
 
