@@ -62,8 +62,8 @@ function App() {
 
   return (
     <Router>
-      <div style={{ textAlign: 'center' }}>
-      <img src={ logo } alt="Logo" style={{ margin: '50px auto', display: 'block' }} />
+      <div style={{ textAlign: 'center', height:'100%' }}>
+      <img src={ logo } alt="Logo" style={{ margin: '0 auto', display: 'block' }} />
       </div>
       <Routes>
         <Route

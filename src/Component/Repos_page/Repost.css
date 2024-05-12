@@ -41,14 +41,21 @@
   }
   .repoLink{
     margin-top: 50px;
-    
+    background-color: #333;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 10px;
+    color: wheat;
+    width: 100px;
+    height: 20px;
+    overflow:hidden;
     
   }
   .reposContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 10px;
+    gap: 1px;
     margin: 0 auto;
     width: 100vw;
     place-items: center;
