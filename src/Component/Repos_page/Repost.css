@@ -76,7 +76,6 @@ ul {
   color: #fff;
   text-align: center;
   background-color: #333;
-
   width: 100%;
 }
 .reposContainer ul li button {
@@ -90,3 +89,12 @@ ul {
   color: #fff;
   transition: .4s;
 }
+@media (max-width: 500px) {
+  .reposContainer {
+    
+    grid-template-columns: 1fr 1fr;
+    width: 100vw; 
+    place-items: center;
+  }
+}
+
